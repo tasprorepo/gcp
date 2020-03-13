@@ -10,8 +10,13 @@ import java.nio.file.Paths;
 public class DownloadObject {
 	
 	public static void main(String ar[]){
-		Path destFilePath = Paths.get("D:/TEMP/sample.txt");
-		downloadObject("psg-sg", "psg-sg", "ntuc_attach/sample.txt", destFilePath);
+//		Path destFilePath = Paths.get("D:/TEMP/sample.txt");
+//		downloadObject("psg-sg", "psg-sg", "ntuc_attach/sample.txt", destFilePath);
+		
+		Path pdfFilePath = Paths.get("D:/TEMP/NEWFOLDER/ABCD.pdf");
+		downloadObject("psg-sg", "psg-sg", "ntuc_attach/NEWFOLDER/ABCD.pdf", pdfFilePath);
+		
+//		gs://psg-sg/ntuc_attach/NEWFOLDER/ABCD.pdf
 	}
 	
   public static void downloadObject(
